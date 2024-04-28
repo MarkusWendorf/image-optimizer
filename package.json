@@ -1,0 +1,23 @@
+{
+  "name": "imago",
+  "version": "0.1.0",
+  "scripts": {
+    "deploy": "cdk deploy --profile personal"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "@types/node": "20.11.30",
+    "aws-cdk": "2.136.1",
+    "esbuild": "^0.20.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.4.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.552.0",
+    "aws-cdk-lib": "2.136.1",
+    "constructs": "^10.0.0",
+    "sharp": "^0.33.3",
+    "source-map-support": "^0.5.21",
+    "zod": "^3.22.4"
+  }
+}
