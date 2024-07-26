@@ -25,7 +25,7 @@ export class ImagoStack extends Stack {
       timeout: Duration.seconds(60),
       environment: {
         IMAGE_BUCKET: bucket.bucketName,
-        ALLOWED_HOSTS: "stage.7f.com,i0.wp.com,images.pexels.com",
+        ALLOWED_HOSTS: "*",
         DEFAULT_DOMAIN: "stage.7f.com",
       },
       bundling: {

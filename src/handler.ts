@@ -82,7 +82,10 @@ function validateOptions(event: APIGatewayProxyEventV2): Options {
     url.startsWith("http") ? url : "https://" + DEFAULT_DOMAIN + url
   );
 
-  if (!ALLOWED_HOSTS.includes(imageUrl.hostname)) {
+  if (
+    !ALLOWED_HOSTS.includes(imageUrl.hostname) &&
+    !ALLOWED_HOSTS.includes("*")
+  ) {
     throw new Error(`Invalid host: ${imageUrl.hostname}`);
   }
 
