@@ -6,7 +6,7 @@ Given a url like `https://example.com?url=https://image.com/mountain.png&w=1024&
 - save the optimized image to S3 (for fast retrieval should the CDN cache be invalidated)
 - cache the image in CloudFront (CDN)
 
-# Configuration
+## Configuration
 
 | Env            | Description                                                                | Example                         | Example |
 |----------------|----------------------------------------------------------------------------|---------------------------------|---------|
